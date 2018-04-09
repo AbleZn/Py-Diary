@@ -36,3 +36,4 @@ Functions
   findall(pattern, string, flags=0) -Find all the possible matches in the entire sequence and returns them as a list of strings.
   sub(pattern, repl, string, count=0, flags=0) -Returns the string obtained by replacing or sbstituting the leftmost non-overlapping occurrences of pattern in string by the replacement.
   compile(pattern, flags=0)
+  
