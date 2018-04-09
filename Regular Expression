@@ -1,0 +1,38 @@
+Character
+  .  -Matches any single character except newline character
+  \w -Matches any single letter, digit or underscore
+  \W -Matches any character not part of \w
+  \s -Matches a single whitespace character like: space
+  \S -Matches any character not part of \s
+  \t -Matches lab
+  \n -Matches newline
+  \r -Matches return
+  \d -Matches decimal digit 0-9
+  ^ -Matches a pattern at the start of the string
+  $ -Matches a pattern at the end of the string
+  [abc] -Matches a or b or c
+  [a-zA-z0-9] -Matches any letter from (a to z) or (A to Z) or (0-9)
+  ^5 -Matches any character except 5
+  \A -Matches only at the start of the string. Works across multiple lines as well.
+  \b -Matches only the beginning or end of the word.
+  \ -If the character following the backslash is a recognized escape character, then the special meaning of the term is taken.
+
+Repetition characters
+  + -Checks for one or more characters to its left
+  * -Checkes for zero or more characters to its left
+  ? -Checks for exactly zero or one character to its left
+  {x} -Repeat exactly x number of times
+  {x, } -Repeat at least x times or more
+  {x, y} -Repeat at least x times but no more than y times
+  
+Match
+  <.*> -Matches the whole string
+  <.*?> -Matches as little text as possible
+  
+Functions
+  group() -Return the string matched by the re
+  re.search(pattern, string, flags=0) -Checks for a match anywhere in the string.
+  re.match(pattern, string, flags=0) -Checks for a match only at the beginning of the string
+  findall(pattern, string, flags=0) -Find all the possible matches in the entire sequence and returns them as a list of strings.
+  sub(pattern, repl, string, count=0, flags=0) -Returns the string obtained by replacing or sbstituting the leftmost non-overlapping occurrences of pattern in string by the replacement.
+  compile(pattern, flags=0)
